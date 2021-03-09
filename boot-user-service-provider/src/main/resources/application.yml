@@ -1,0 +1,12 @@
+server:
+  port: 8085
+dubbo:
+  application:
+    name: boot-user-service-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: registry
